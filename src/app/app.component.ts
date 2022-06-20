@@ -8,15 +8,16 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  timeForm = new FormControl('');
+  timeForm = new FormControl('08:21:30.123');
 
   constructor(private atp: AmazingTimePickerService) {
   }
+
   openTimeDialog() {
-    this.atp.open({
-      time: this.timeForm.value
-    }).afterClose().subscribe(value => {
-      this.timeForm.setValue(value);
-    })
+    this.atp.open({time: this.timeForm.value, changeToMinutes: true})
+      .afterClose()
+      .subscribe(value => {
+        this.timeForm.setValue(value);
+      })
   }
 }
