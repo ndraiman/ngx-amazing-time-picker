@@ -7,7 +7,7 @@
     "build": "ng build atp",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "packagr": "ng-packagr -p ng-package.json"
+    "publish": "cd dist/atp && npm publish"
   },
   "private": true,
   "dependencies": {
