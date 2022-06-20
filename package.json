@@ -8,7 +8,7 @@
     "postbuild": "cp README.md dist/atp && cp LICENSE.md dist/atp && cp CHANGELOG.md dist/atp",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "prepare": "npm run build",
+    "prepublish": "npm run build",
     "publish": "cd dist/atp && npm publish"
   },
   "private": true,
