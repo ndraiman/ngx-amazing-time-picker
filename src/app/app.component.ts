@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AmazingTimePickerService } from 'atp';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ngx-amazing-time-picker';
+  timeForm = new FormControl('');
+
+  constructor(private atp: AmazingTimePickerService) {
+  }
+  openTimeDialog() {
+    this.atp.open({
+      time: this.timeForm.value
+    }).afterClose().subscribe(value => {
+      this.timeForm.setValue(value);
+    })
+  }
 }
