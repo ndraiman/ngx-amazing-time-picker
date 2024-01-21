@@ -18,12 +18,11 @@ export class AmazingTimePickerService {
   ) {}
 
   open (config?: TimePickerConfig): IDialogResult {
-    const thems = ['light', 'dark', 'material-red', 'material-green', 'material-blue', 'material-purple', 'material-orange'];
-    const _self = this;
+    const themes = ['light', 'dark', 'material-red', 'material-green', 'material-blue', 'material-purple', 'material-orange'];
     config = config || {};
     config = {
       time: config.time || '00:00',
-      theme: thems.indexOf(config.theme) > 0 ? config.theme : 'light' || config.theme || 'light',
+      theme: themes.indexOf(config.theme) > 0 ? config.theme : 'light' || config.theme || 'light',
       rangeTime: config.rangeTime || {start: '0:0', end: '24:0'},
       arrowStyle: config.arrowStyle || {},
       locale: config.locale || 'en',

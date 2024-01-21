@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ngx-amazing-time-picker:build:production"
+              "buildTarget": "ngx-amazing-time-picker:build:production"
             },
             "development": {
-              "browserTarget": "ngx-amazing-time-picker:build:development"
+              "buildTarget": "ngx-amazing-time-picker:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-amazing-time-picker:build"
+            "buildTarget": "ngx-amazing-time-picker:build"
           }
         },
         "test": {

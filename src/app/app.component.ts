@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
-import { AmazingTimePickerService } from 'atp';
-import { FormControl } from '@angular/forms';
+import { AmazingTimePickerService, AmazingTimePickerModule } from 'atp';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    standalone: true,
+    imports: [AmazingTimePickerModule, ReactiveFormsModule]
 })
 export class AppComponent {
   timeForm = new FormControl<string>('08:21:30.123');

@@ -2,11 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { IClockNumber, IDisplayPreference, TimePickerConfig } from '../definitions';
 import { AtpCoreService } from '../atp-core.service';
 import { ITime } from '../definitions';
+import { NgClass, NgFor, NgStyle } from '@angular/common';
 
 @Component({
-  selector: 'time-picker',
-  templateUrl: './time-picker.component.html',
-  styleUrls: ['./time-picker.component.scss']
+    selector: 'time-picker',
+    templateUrl: './time-picker.component.html',
+    styleUrls: ['./time-picker.component.scss'],
+    standalone: true,
+    imports: [NgClass, NgFor, NgStyle]
 })
 export class TimePickerComponent implements OnInit {
 

@@ -9,9 +9,10 @@ import { Subject } from 'rxjs';
 /* tslint:enable */
 
 @Component({
-  selector: 'atp-time-picker',
-  templateUrl: './atp-time-picker.component.html',
-  styleUrls: ['./atp-time-picker.component.scss']
+    selector: 'atp-time-picker',
+    templateUrl: './atp-time-picker.component.html',
+    styleUrls: ['./atp-time-picker.component.scss'],
+    standalone: true
 })
 
 export class AtpTimePickerComponent implements OnInit {

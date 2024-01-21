@@ -3,17 +3,15 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { AmazingTimePickerService } from './atp-time-picker.service';
 
 @Directive({
-  selector: 'input[atp-time-picker]',
-  providers: [{
-    provide: NG_VALUE_ACCESSOR,
-    useExisting: AtpDirective,
-    multi: true
-  }]
+    selector: 'input[atp-time-picker]',
+    providers: [{
+            provide: NG_VALUE_ACCESSOR,
+            useExisting: AtpDirective,
+            multi: true
+        }],
+    standalone: true
 })
 export class AtpDirective implements ControlValueAccessor {
-
-  @Output() myClick = new EventEmitter();
-
   private elementRef: ElementRef;
   private onChange = (x: any): void => {};
   constructor(

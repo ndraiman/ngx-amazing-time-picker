@@ -9,11 +9,9 @@ import { AtpCoreService } from './atp-core.service';
 @NgModule({
     imports: [
         CommonModule,
-    ],
-    declarations: [
         TimePickerComponent,
         AtpTimePickerComponent,
-        AtpDirective
+        AtpDirective,
     ],
     providers: [
         AmazingTimePickerService,

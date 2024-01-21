@@ -1,14 +1,13 @@
 {
   "name": "ngx-amazing-time-picker",
-  "version": "16.0.0",
+  "version": "17.0.0",
   "author": "Netanel Draiman",
   "license": "MIT",
-  "repository": "https://github.com/ndraiman/ngx-amazing-time-picker",
-  "peerDependencies": {
-    "@angular/common": "^16.2.12",
-    "@angular/core": "^16.2.11"
+  "repository": {
+    "url": "https://github.com/ndraiman/ngx-amazing-time-picker"
   },
-  "dependencies": {
-    "tslib": "^2.3.0"
+  "peerDependencies": {
+    "@angular/common": "^17.1.0",
+    "@angular/core": "^17.1.0"
   }
 }
