@@ -5,7 +5,7 @@
 
 Updated [AmazingTimePicker](https://github.com/owsolutions/amazing-time-picker) library to work with recent angular versions
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/ndraiman/ngx-amazing-time-picker/tree/v15.0.0?file=src%2Fapp%2Fapp.component.ts)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/ndraiman/ngx-amazing-time-picker/tree/v16.0.0?file=src%2Fapp%2Fapp.component.ts)
 
 ---
 

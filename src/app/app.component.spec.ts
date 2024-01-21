@@ -1,16 +1,18 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { AmazingTimePickerModule } from 'atp';
+import { ReactiveFormsModule } from '@angular/forms';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        AmazingTimePickerModule,
+        ReactiveFormsModule,
       ],
-      declarations: [
-        AppComponent
-      ],
+      declarations: [AppComponent],
     }).compileComponents();
   });
 
@@ -23,13 +25,13 @@ describe('AppComponent', () => {
   it(`should have as title 'ngx-amazing-time-picker'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ngx-amazing-time-picker');
+    expect(app.timeForm).toBeDefined();
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('ngx-amazing-time-picker app is running!');
+    expect(compiled.querySelector('input')?.value).toContain('08:21:30.123');
   });
 });

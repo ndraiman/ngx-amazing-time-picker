@@ -1,5 +1,9 @@
 # Changelog
 
+## [16.0.0](https://github.com/ndraiman/ngx-amazing-time-picker/compare/v15.0.0...v16.0.0)
+
+* Support for Angular 16
+
 ## [15.0.0](https://github.com/ndraiman/ngx-amazing-time-picker/compare/v14.0.0...v15.0.0)
 
 * Support for Angular 15
