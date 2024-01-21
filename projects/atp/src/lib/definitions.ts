@@ -41,10 +41,10 @@ export interface IDialogResult {
 }
 
 export interface IClockNumber {
-  time: String;
+  time: string;
   left: string;
   top: string;
-  type: String;
+  type: 'minute' | 'hour';
 }
 
 export interface IDisplayPreference {

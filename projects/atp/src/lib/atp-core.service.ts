@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ITime } from './definitions';
+import {IClockNumber, ITime} from './definitions';
 
 @Injectable()
 export class AtpCoreService {
@@ -30,8 +30,8 @@ export class AtpCoreService {
     return allTimes;
   }
 
-  public ClockMaker (type: 'minute' | 'hour'): Array<any> {
-    const items = [];
+  public ClockMaker (type: 'minute' | 'hour'): IClockNumber[] {
+    const items: IClockNumber[] = [];
     const timeVal = (type === 'minute') ? 60 : 12;
     const timeStep = (type === 'minute') ? 5 : 1;
     const timeStart = (type === 'minute') ? 0 : 1;
